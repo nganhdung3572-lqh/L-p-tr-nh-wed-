@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pong Game - Learning Edition</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Pong Game - Learning Edition</h1>
+        
+        <div class="scoreboard">
+            <div class="score">
+                <h2>Player (You)</h2>
+                <p id="playerScore">0</p>
+            </div>
+            <div class="score">
+                <h2>Computer</h2>
+                <p id="computerScore">0</p>
+            </div>
+        </div>
+
+        <!-- Canvas: This is where the game will be drawn -->
+        <canvas id="gameCanvas" width="800" height="400"></canvas>
+
+        <div class="controls">
+            <p><strong>Controls:</strong></p>
+            <p>⬆️ Arrow Up / Down to move paddle</p>
+            <p>🖱️ Or move your mouse up and down</p>
+            <button id="startBtn">Start Game</button>
+            <button id="resetBtn">Reset Score</button>
+        </div>
+    </div>
+
+    <!-- Load JavaScript file -->
+    <script src="game.js"></script>
+</body>
+</html>
